@@ -1,9 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Buds Project</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:white;
+}
+
+.container{
+    text-align:center;
+    background: rgba(0,0,0,0.4);
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+h1{
+    font-size:40px;
+}
+
+p{
+    font-size:18px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:6px;
+    background:white;
+    color:#333;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#f1f1f1;
+}
+</style>
+
 </head>
+
 <body>
-<h1>Hey from Buds Build 🚀</h1>
+
+<div class="container">
+<h1>🚀 Buds Build Project</h1>
+<p>Your CI/CD pipeline is working successfully!</p>
+<p>Built using GitHub Actions ⚙️</p>
+
+<button onclick="showMessage()">Click Me</button>
+</div>
+
+<script>
+function showMessage(){
+    alert("Buds Project Build Successful 🎉");
+}
+</script>
+
 </body>
 </html>
